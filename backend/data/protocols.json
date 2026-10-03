@@ -1,0 +1,43 @@
+{
+  "synthetic": true,
+  "description": "Synthetic protocol records for local Protocol Atlas development. These are not validated laboratory instructions.",
+  "protocols": [
+    {
+      "name": "Sample Preparation Protocol",
+      "category": "Sample handling",
+      "version": "1.2",
+      "updated": "2026-09-01",
+      "pages": 8,
+      "chunks": [
+        {"page": 3, "text": "Add 500 microliters of lysis buffer to the sample tube and vortex for 30 seconds. Incubate at room temperature for 5 minutes."},
+        {"page": 4, "text": "Centrifuge at 12,000 x g for 2 minutes. Carefully transfer the supernatant without disturbing the pellet."},
+        {"page": 5, "text": "Add 200 microliters of wash buffer, mix by gentle inversion, and centrifuge at 12,000 x g for 1 minute."}
+      ]
+    },
+    {
+      "name": "RNA Extraction SOP",
+      "category": "Nucleic acid extraction",
+      "version": "2.0",
+      "updated": "2026-08-31",
+      "pages": 12,
+      "chunks": [
+        {"page": 2, "text": "Wear gloves and work on a clean surface. Label all tubes before beginning the extraction workflow."},
+        {"page": 6, "text": "Mix the lysate with an equal volume of ethanol before loading the mixture onto the spin column."},
+        {"page": 8, "text": "Wash the column twice with 500 microliters of wash solution, then centrifuge for 2 minutes to dry the membrane."},
+        {"page": 9, "text": "Elute RNA with 50 microliters of nuclease-free water and incubate for 1 minute before centrifuging."}
+      ]
+    },
+    {
+      "name": "Cell Culture Maintenance",
+      "category": "Cell culture",
+      "version": "1.0",
+      "updated": "2026-08-28",
+      "pages": 6,
+      "chunks": [
+        {"page": 2, "text": "Inspect cultures under the microscope before feeding. Record confluence, morphology, and any visible contamination."},
+        {"page": 3, "text": "Warm complete medium to room temperature. Aspirate spent medium and add fresh medium slowly along the vessel wall."},
+        {"page": 5, "text": "When cultures reach approximately 80 percent confluence, detach cells using the approved dissociation reagent and reseed at the planned density."}
+      ]
+    }
+  ]
+}

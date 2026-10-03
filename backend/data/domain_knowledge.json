@@ -1,0 +1,24 @@
+{
+  "synthetic": true,
+  "description": "Curated general scientific context for answering explanations. It is not a replacement for a validated protocol or manufacturer instructions.",
+  "entries": [
+    {
+      "id": "spin-column-wash",
+      "topics": ["wash column", "wash solution", "spin column", "silica membrane", "nucleic acid extraction"],
+      "text": "In silica spin-column nucleic-acid workflows, wash steps commonly remove salts, proteins, detergents, and other contaminants while nucleic acid remains bound to the membrane. Repeating a wash can improve contaminant removal. A final dry spin is commonly used to remove residual wash solvent, because carryover can interfere with downstream reactions.",
+      "provenance": {"kind": "curated", "source": "Protocol Atlas scientific context", "license": "Review required before external publication"}
+    },
+    {
+      "id": "protocol-deviation",
+      "topics": ["increase amount", "increase volume", "increase time", "increase centrifuge", "optimization", "change protocol"],
+      "text": "Increasing a reagent volume or centrifugation time is a protocol deviation, not an automatically safe improvement. The effect depends on the column capacity, sample amount, buffer composition, rotor, membrane chemistry, and downstream assay. Treat changes as an optimization experiment and verify recovery, purity, and downstream performance against the validated procedure or manufacturer guidance.",
+      "provenance": {"kind": "curated", "source": "Protocol Atlas scientific context", "license": "Review required before external publication"}
+    },
+    {
+      "id": "centrifugation",
+      "topics": ["centrifuge", "centrifugation", "g force", "spin", "pellet"],
+      "text": "Centrifugation separates components according to sedimentation behavior. Protocols specify relative centrifugal force, time, temperature, and rotor conditions because changing them can alter recovery and sample quality. Do not assume rpm is interchangeable with x g without the rotor radius.",
+      "provenance": {"kind": "curated", "source": "Protocol Atlas scientific context", "license": "Review required before external publication"}
+    }
+  ]
+}

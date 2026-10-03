@@ -1,0 +1,37 @@
+services:
+  api:
+    build:
+      context: ./backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      QDRANT_URL: http://qdrant:6333
+      RETRIEVAL_MODE: ${RETRIEVAL_MODE:-keyword}
+      QDRANT_COLLECTION: ${QDRANT_COLLECTION:-protocol_chunks}
+    volumes:
+      - protocol-data:/app/data
+    depends_on:
+      - qdrant
+
+  qdrant:
+    image: qdrant/qdrant:latest
+    ports:
+      - "6333:6333"
+    volumes:
+      - qdrant-data:/qdrant/storage
+
+  web:
+    build:
+      context: .
+    ports:
+      - "3000:3000"
+    environment:
+      NEXT_PUBLIC_API_URL: http://localhost:8000
+    depends_on:
+      - api
+
+volumes:
+  protocol-data:
+  qdrant-data:
